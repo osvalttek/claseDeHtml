@@ -1,0 +1,115 @@
+:root {
+  --w1: 1fr 1fr 1fr 1fr 1fr;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: var(--w1);
+  grid-template-rows: 10vh auto 10vh;
+  grid-template-areas:
+    "aside header header header header"
+    "aside main main main main"
+    "aside footer footer footer footer";
+  min-height: 100vh;
+}
+header {
+  grid-area: header;
+  /* height: 10vh; */
+  background-color: darkmagenta;
+}
+aside {
+  grid-area: aside;
+  background-color: blue;
+}
+main {
+  grid-area: main;
+  /* min-height: 80vh; */
+  background-color: coral;
+}
+
+footer {
+  grid-area: footer;
+  /* height: 10vh; */
+  background-color: crimson;
+}
+
+/* ------------------------------------------- */
+/* :root {
+  --w1: 1fr 1fr 1fr 1fr 1fr;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: var(--w1);
+  grid-template-rows: 10vh auto 10vh;
+  min-height: 100vh;
+}
+header {
+  grid-column: 2 / span 4;
+  background-color: darkmagenta;
+}
+aside {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 1;
+  background-color: blue;
+}
+main {
+  grid-column: 2 / span 4;
+  background-color: coral;
+}
+
+footer {
+  grid-column: 2 / span 4;
+  background-color: crimson;
+} */
+/* ------------------------------------------- */
+/* codigo feo */
+/* :root {
+  --w1: 20% 20% 20% 20% 20%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: var(--w1);
+  width: 100vw;
+}
+aside {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 1;
+  min-height: 80vh;
+  background-color: blue;
+}
+
+header {
+  grid-column: 2 / span 4;
+  height: 10vh;
+  background-color: darkmagenta;
+}
+main {
+  grid-column: 2 / span 4;
+  min-height: 80vh;
+  background-color: coral;
+}
+footer {
+  grid-column: 2 / span 4;
+  height: 10vh;
+  background-color: crimson;
+} */
