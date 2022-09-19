@@ -1,0 +1,24 @@
+{
+  "name": "clasedehtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch":"sass --watch ./styles/style.scss ./styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osvalttek/claseDeHtml.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osvalttek/claseDeHtml/issues"
+  },
+  "homepage": "https://github.com/osvalttek/claseDeHtml#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}

@@ -1,0 +1,18 @@
+$primary:blue;
+
+body{
+    background-color:$primary;
+}
+
+.header{
+    background-color: aliceblue;
+    &__h1{
+        background-color: red;
+    }
+    &__nav{
+        background-color: tomato;
+        &Link{
+            display: block;
+        }
+    }
+}
